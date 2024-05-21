@@ -118,7 +118,7 @@ body {
 }
 .me {
     color: black;
-    font-size: clamp(.8rem, .3vw, 1rem); 
+    font-size: clamp(.75rem, .3vw, 1rem); 
 }
 #aboutme-content {
     padding: 20px;
