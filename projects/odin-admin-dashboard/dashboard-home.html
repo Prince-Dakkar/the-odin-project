@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Dashboard</title>
+        <link rel ="stylesheet" href="./style.css">
+            
+    </head>
+    <body>
+        
+        <div class="main-grid" id="header">
+            <div class="header-grid" id="header-top">
+                <div id="search-stuff">
+                    <img class="item-img" id="search-img" src="./images/magnify.svg">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                </div>
+
+                <div id="top-other">
+                    <a href="#"><img class="item-img" id="notifs-img" src="./images/bell-ring-outline.svg"></a>
+                    <div id="sml-profile-img-holder"></div>
+                    <p id="username"> Test User</p>
+                </div>
+            
+            </div>
+            <div class="header-grid" id="header-bottom">
+                <div id="head-bottom-left">
+                    <div id="lrg-profile-img-holder"></div>
+                    <p id="greet-user"> <span id="hi-user">Hi there,</span> <br> <span id="user-at"> Test User (@TestUser)</span></p>
+                </div>
+                <div id="head-bottom-right">
+                    <a href="#"><button class="blue-btn" id="new-btn"> New</button></a>
+                    <a href="#"><button class="blue-btn" id="upload-btn"> Upload</button></a>
+                    <a href="#"><button class="blue-btn" id="share-btn">Share</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid" id="sidebar">
+            <div id="dashboard">
+                <img id="dashboard-img" src="./images/view-dashboard.svg">
+                <p id="dashboard-txt">Dashboard</p>
+            </div>
+            <div id="dash-actions" class="dash-grid">
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="home-item-img" src="./images/home.svg">
+                    <a href="#" id="home-item-txt">Home</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="profile-item-img" src="./images/card-account-details-outline.svg">
+                    <a href="#" id="profile-item-txt">Profile</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="msg-item-img" src="./images/message.svg">
+                    <a href="#" id="msg-item-txt">Messages</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="hist-item-img" src="./images/history.svg">
+                    <a href="#" id="hist-item-txt">History</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="task-item-img" src="./images/note-multiple.svg">
+                    <a href="#" id="task-item-txt">Tasks</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="commun-item-img" src="./images/account-group.svg">
+                    <a href="#" href="#" id="commun-item-txt">Communities</a>
+                </div>
+            </div>
+
+            <div id="dash-help" class="dash-grid">
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="settings-item-img" src="./images/cog.svg">
+                    <a href="#" id="settings-item-txt">Settings</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="support-item-img" src="./images/help-box.svg">
+                    <a href="#" id="support-item-txt">Support</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="priv-item-img" src="./images/shield-check.svg">
+                    <a id="priv-item-txt" href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid" id="main-content">
+
+            <div id="projects">
+                <p class="content-label" id="Projects-label">Your Projects</p>
+                <div id="projects-grid">
+                    <div class="project" id="project-one">
+                        <p>
+                            <span class="project-name"> Super Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+                                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo...
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-two">
+                        <p>
+                            <span class="project-name"> Less Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                To take a trivial example, which of us ever undertakes laborious physical exercise, except to 
+                                obtain some advantage from it? But who has any right to find fault with a man who chooses to 
+                                enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-three">
+                        <p>
+                            <span class="project-name"> Less Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                In a free hour, when our power of choice is untrammelled and when nothing prevents our being 
+                                able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in 
+                                certain circumstances and owing to the claims of duty or the obligations of business it will 
+                                frequently occur that pleasures have to be repudiated and annoyances accepted.
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-four">
+                        <p>
+                            <span class="project-name"> Less Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                But I must explain to you how all this mistaken idea of denouncing pleasure 
+                                and praising pain was born and I will give you a complete account of the system.
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-five">
+                        <p>
+                            <span class="project-name"> Less Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+                                praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias 
+                                excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui 
+                                officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-six">
+                        <p>
+                            <span class="project-name"> Less Cool Project</span>
+                            <br>
+                            <br>
+                            <span class="project-text">
+                                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
+                                id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            </span>
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon" id="share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="announcements-trending">
+                    <div id="announcements">
+                        <p class="content-label" id="announcement-label">Announcements</p>
+                        <div class="flexy card" id="announce-content">
+                            <div class="announcement">
+                                <p>
+                                    <span class="announcement-title"> Site Maintenence</span>
+                                    <br>
+                                    <span class="announcement-text"> Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="announcement"> 
+                                <p>
+                                    <span class="announcement-title"> Positivity Day!</span>
+                                    <br>
+                                    <span class="announcement-text"> Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="announcement"> 
+                                <p>
+                                    <span class="announcement-title"> Updated Privacy Policy</span>
+                                    <br>
+                                    <span class="announcement-text"> Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                </p>
+                            </div>                       
+                        </div>
+                    </div>
+
+                    <div id="trending">
+                        <p class="content-label" id="trending-label">Trending</p>
+                        <div class="flexy card" id="trending-content">
+                            <div class="trend">
+                                <div class="trending-project-img-placeholder" id="trending-project-img-placeholder-one"></div>
+                                <p>
+                                    <span class="trending-project-user">
+                                        @User41
+                                    </span>
+                                    <br>
+                                    <span class="trending-project-name">
+                                        Lame Project Name
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="trend"> 
+                                <div class="trending-project-img-placeholder" id="trending-project-img-placeholder-two"></div>
+                                <p>
+                                    <span class="trending-project-user">
+                                        @User34234
+                                    </span>
+                                    <br>
+                                    <span class="trending-project-name">
+                                        Wack Project Name
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="trend">  
+                                <div class="trending-project-img-placeholder" id="trending-project-img-placeholder-three"></div>
+                                <p>
+                                    <span class="trending-project-user">
+                                        @User654
+                                    </span>
+                                    <br>
+                                    <span class="trending-project-name">
+                                        Cool Project Name
+                                    </span>
+                                </p>
+                            </div>  
+                            <div class="trend"> 
+                                <div class="trending-project-img-placeholder" id="trending-project-img-placeholder-four"></div>
+                                <p>
+                                    <span class="trending-project-user">
+                                        @User9767
+                                    </span>
+                                    <br>
+                                    <span class="trending-project-name">
+                                        Quirky Project Name
+                                    </span>
+                                </p>
+                            </div>  
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

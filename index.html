@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dakkar's Odin Project</title>
+        <link rel ="stylesheet" href="./style.css">
+            
+    </head>
+    <body>
+        
+        <div class="main-grid" id="header">
+            <div class="header-grid" id="header-top">
+                <div id="search-stuff">
+                    <img class="item-img" id="search-img" src="./images/magnify.svg">
+                    <input type="text" id="search-bar" placeholder="Search...">
+                </div>
+
+                <div id="top-other">
+                    <a href="#"><img class="item-img" id="notifs-img" src="./images/bell-ring-outline.svg"></a>
+                    <div id="sml-profile-img-holder"></div>
+                    <p id="username"> Dakkar</p>
+                </div>
+            
+            </div>
+            <div class="header-grid" id="header-bottom">
+                <div id="head-bottom-left">
+                    <div id="lrg-profile-img-holder"></div>
+                    <p id="greet-user"> <span id="hi-user">Hi there,</span> <br> <span id="user-at">I'm Dakkar! (Bri)</span></p>
+                </div>
+                <div id="head-bottom-right">
+                    <a href="#"><button class="blue-btn" id="new-btn"> Demo </button></a>
+                    <a href="#"><button class="blue-btn" id="upload-btn"> Possible</button></a>
+                    <a href="#"><button class="blue-btn" id="share-btn">Stuff</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid" id="sidebar">
+            <div id="dashboard">
+                <img id="dashboard-img" src="./images/view-dashboard.svg">
+                <p id="dashboard-txt">Demo Dash</p>
+            </div>
+            <div id="dash-actions" class="dash-grid">
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="home-item-img" src="./images/home.svg">
+                    <a href="#" id="home-item-txt">Home</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="profile-item-img" src="./images/card-account-details-outline.svg">
+                    <a href="#" id="profile-item-txt">Profile</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="msg-item-img" src="./images/message.svg">
+                    <a href="#" id="msg-item-txt">Messages</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="hist-item-img" src="./images/history.svg">
+                    <a href="#" id="hist-item-txt">History</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="task-item-img" src="./images/note-multiple.svg">
+                    <a href="#" id="task-item-txt">Tasks</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="commun-item-img" src="./images/account-group.svg">
+                    <a href="#" href="#" id="commun-item-txt">Communities</a>
+                </div>
+            </div>
+
+            <div id="dash-help" class="dash-grid">
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="settings-item-img" src="./images/cog.svg">
+                    <a href="#" id="settings-item-txt">Settings</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="support-item-img" src="./images/help-box.svg">
+                    <a href="#" id="support-item-txt">Support</a>
+                </div>
+                <div class="dash-item flex-item">
+                    <img class="item-img white-img" id="priv-item-img" src="./images/shield-check.svg">
+                    <a id="priv-item-txt" href="#">Privacy</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-grid" id="main-content">
+
+            <div id="projects">
+                <p class="content-label" id="Projects-label">My Projects (Reverse Timeline)</p>
+                <div id="projects-grid">
+
+                    <!-- Add new projects here at top -->
+
+                    <div class="project" id="project-eigth">
+                        <a class="project-name"  href="#"><p class="project-name-p"> Odin Library</p></a>
+                        <p class="project-text">
+                            Make a library! Exploring Objects in Javascript.
+                            <br>Course: Javascript.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-seven">
+                        <a class="project-name"  href="./projects/odin-admin-dashboard/dashboard-home.html"><p class="project-name-p">Odin Admin Dashboard</p></a>
+                        <p  class="project-text">
+                            Grid layout, intermediate HTML/CSS. This Demo dash is a modified version of this original project.
+                            <br>Course: Intermediate HTML and CSS.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon" id="star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-admin-dashboard/dashboard-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-six">
+                        <a class="project-name"  href="./projects/odin-signup-form/signup-home.html"><p class="project-name-p"> Odin Sign-up Form</p></a>
+                        <p class="project-text">
+                            Targeting more intermediate CSS/HTML topics. Fun fact: I did a spin off on this as a full stack project that
+                            I call "The Positivity Board". Once I deploy the backend I'll add it as a project here...maybe.
+                            <br>Course: Intermediate HTML and CSS.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-signup-form/signup-home.html"> <img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-five">
+                        <a class="project-name"  href="./projects/odin-landing-page/landing-home.html"><p class="project-name-p">Odin Landing Page</p></a>
+                        <p  class="project-text">
+                            Taking on a bigger page layout. This project showcases ability to set up a 
+                            simple html framework for a project and use simple html/css concepts like FLEX!
+                            <br>Course: Foundations.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-landing-page/landing-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-four">
+                        <a class="project-name"  href="./projects/odin-calculator/calculator-home.html"><p class="project-name-p">Odin Calculator</p></a>
+                        <p  class="project-text">
+                            Javascript logic exercise with UI. Mine actually calculates the whole expression once entered after doing 
+                            well-formed validation.
+                            <br>Course: Foundations.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-calculator/calculator-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-three">
+                        <a class="project-name"  href="./projects/odin-etchy-sketchy/etchy-home.html"><p class="project-name-p">Odin Etch-a-Sketch</p></a>
+                        <p  class="project-text">
+                            More practice with Javascript and working with Dom manipulation. 
+                            <br>Course: Foundations.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-etchy-sketchy/etchy-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-two">
+                        <a class="project-name"  href="./projects/odin-rock-paper-scissors/rps-home.html"><p class="project-name-p">  Odin Rock/Paper/Scissions</p></a>
+                        <p class="project-text">
+                            This is the refactored (UI added) version of the Rock/Paper/Scissors project. Learning basic 
+                            Javascript and then how to hook it up to a UI.
+                            <br>Course: Foundations.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-rock-paper-scissors/rps-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="project" id="project-one">
+                        <a class="project-name"  href="./projects/odin-recipes/recipes-home.html"><p class="project-name-p"> Odin Recipes</p></a>
+                        <p class="project-text">
+                            Simple HTML and CSS. Learning how to properly fill out a skeleton and link all necessary files. Showcases ability 
+                            to set up a simple html framework for a project, design and set up site navigation, and use simple html concepts 
+                            like links, images, lists and bolding.
+                            <br>Course: Foundations.
+                        </p>
+                        <div class="project-actions">
+                            <a href="#"><img class="project-action-icon star-icon" src="./images/star-plus-outline.svg" /></a>
+                            <a href="./projects/odin-recipes/recipes-home.html"><img class="project-action-icon view-icon" src="./images/eye-plus-outline.svg" /></a>
+                            <a href="#"><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="announcements-aboutme">
+                    <div id="announcements">
+                        <p class="content-label" id="announcement-label">Announcements</p>
+                        <div class="flexy card" id="announce-content">
+                            <div class="announcement">
+                                <p>
+                                    <span class="announcement-title"> What is this Site? </span>
+                                    <br>
+                                    <span class="announcement-text"> This is my central hub for the projects
+                                        I do for The Odin Project. I was getting tired of making so many new little
+                                        repos for the separate projects, so I decided to bundle them all up together!
+                                        As you can see, I just modified the Admin Dashboard project to get started with 
+                                        my home page.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="announcement"> 
+                                <p>
+                                    <span class="announcement-title"> Positivity Day!</span>
+                                    <br>
+                                    <span class="announcement-text"> Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                </p>
+                            </div>
+                            <div class="announcement"> 
+                                <p>
+                                    <span class="announcement-title"> Updated Privacy Policy</span>
+                                    <br>
+                                    <span class="announcement-text"> Lorem ipsum dolor sit amet, 
+                                        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </span>
+                                </p>
+                            </div>                       
+                        </div>
+                    </div>
+
+                    <div id="aboutme">
+                        <p class="content-label" id="aboutme-label">About Me</p>
+                        <div class="flexy card" id="aboutme-content">
+                            <p class="me" id="personal-greet"> Hi, I'm Dakkar!</p>
+                            <p class="me" id="personal-intro">
+                                My name is Bri (Dakkar), and I've been working on the Odin Project since mid Feburary, 2024.
+                                I graduated college in 2023 and I'm using this project to fill in the gaps 
+                                in my education and to become a better rounded full-stack dev. Check me out on 
+                                LinkedIn and Github or shoot me a message if u want!
+                            </p>
+
+                            <ul>
+                                <li>
+                                    <a class="me social" href="https://github.com/Prince-Dakkar" id="github"><p class="me" >Github</p></a>
+                                </li>
+                                <li>
+                                    <a class="me social" href="https://www.linkedin.com/in/briana-bumgardner/" id="linkedin"><p class="me" >LinkedIn</p></a>
+                                </li>
+                                <li>
+                                    <p class="me"> Email: bri.bumgardner@gmail.com</p>
+                                </li>
+                            </ul>
+
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

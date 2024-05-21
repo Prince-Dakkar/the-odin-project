@@ -1,0 +1,79 @@
+div {
+    margin: 10px;
+}
+
+.heading {
+    width:auto;
+    text-align: center;
+    color: white;
+    background-color: #444b60;
+    border: 4px solid #9c0a0a;
+}
+
+.home_header_f {
+    color: white;
+    background-color: #415065;
+}
+
+.home_header_a {
+    color: white;
+    background-color: #9c0a0a;
+}
+
+
+.head_image, .recipe_image, .art_image {
+    text-align: center;
+}
+
+.recipe_content_in, .recipe_content_out, .recipe_footer, .content {
+    border: 2px solid black; 
+}
+
+.art_content {
+    display: inline-flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    border: 2px solid #9c0a0a; 
+}
+
+.art_footer {
+    border: 2px solid #9c0a0a; 
+}
+
+.art_desc {
+    padding: 50px;
+}
+
+.recipe_content_in {
+    margin: 30px;
+    padding: 30px;
+}
+
+.food_div, .art_div {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #9c0a0a; 
+}
+
+.footer {
+    text-align: center;
+    background-color: #334257;
+    color: white;
+}
+.footer_a {
+    text-align: center;
+    background-color: #9c0a0a;
+    color: white;
+}
+
+.grid {
+    display: inline-grid;
+}
+
+.content {
+    display: inline-flex;
+    justify-content: center;
+    gap: 50px;
+
+}

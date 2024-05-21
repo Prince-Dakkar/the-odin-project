@@ -1,0 +1,42 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.header-footer {
+    text-align: center;
+    background-color: #1F2937;
+    color: white;
+    padding: 25px;
+}
+#container {
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: wrap;
+    height: 500px;
+    aspect-ratio : 1 / 1;
+    justify-content: space-around;
+    align-items: center;
+}
+.page {
+    /* border: 4px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#controls {
+    border: 4px solid black;
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#control-panel-label, #footer {
+    font-size: x-large;
+    font-weight: bold;
+}
+button {
+    border-radius: 4px;
+}
