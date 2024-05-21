@@ -171,6 +171,9 @@ a {
 #sidebar>div>div>a {
     font-size: large;
 }
+.dash-item:hover {
+    filter: invert(42%) sepia(99%) saturate(1095%) hue-rotate(85deg) brightness(99%) contrast(106%);
+} 
 /*********** Header ********************************************************************/
 #header-top {
     display: grid;
