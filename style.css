@@ -68,6 +68,7 @@ body {
 .project-text {
     font-size: small;
     margin-top: -10;
+    height: ;
 }
 .project-actions {
     display: flex;
@@ -124,8 +125,10 @@ body {
     padding: 20px;
 }
 #aboutme-content > ul {
-    text-decoration:underline;
     list-style: none;
+}
+#aboutme-content > ul  > li > a {
+    text-decoration:underline;
 }
 
 /*********** Sidebar *******************************************************************/
