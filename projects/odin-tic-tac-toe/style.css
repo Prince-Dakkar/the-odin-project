@@ -1,0 +1,26 @@
+
+.page {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    justify-content: space-around;
+}
+.board {
+    width: 310px;
+    display: grid;
+    /* border: 2px solid black; */
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+    background-color: black;
+}
+.spot {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: 0px;
+    font-size: 48px;
+}
