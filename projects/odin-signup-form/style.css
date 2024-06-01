@@ -75,7 +75,7 @@ img {
     background-color: var(--form-dark);
 }
 #content-header {
-    font-size: calc(20px + 1vw);
+    font-size: calc(14px + 1vw);
     /* border: 2px solid blue; */
     padding-top: var(--form-offset);
     font-weight: bold;
@@ -88,10 +88,6 @@ img {
 #main-content{
     display: flex;
     flex-direction: column;
-}
-#content-form {
-    /* height: 65%; */
-    /* border: 2px solid red; */
 }
 #confirm, #pass, #first, #last, #email, #number {
     display: flex;

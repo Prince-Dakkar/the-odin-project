@@ -8,13 +8,51 @@
         <script src="./script.js" defer></script>
     </head>
     <body>
-        <div class="page">
+        <div class="ctrl">
+            <h1>Controls</h1>
+
+            <form id="form" action="javascript:void(0);" onsubmit="Game.startGame()">
+                <fieldset id="fieldset">
+                    <div id="player1">
+                        <label for="player1-f">Name for Player 1 (O):</label>
+                        <input type="text" id="player1-f" name="player1-f" size="20" required minlength="1" maxlength="12" placeholder="Anne">
+                    </div>
+                    <div id="player2">
+                        <label for="player2-f">Name for Player 2 (X):</label>
+                        <input type="text" id="player2-f" name="player2-f" size="20" required minlength="1" maxlength="12" placeholder="John">
+                    </div>
+                    <button type="submit" id="sub" name="sub" required>Start Game</button>
+                </fieldset>
+            </form>
+
+            
+            <div class="scores">
+                <h1>Tally: </h1>
+                <div id="score-b">
+                    <div id="score-1">
+                        <p id="player1-name"> Player 1: </p>
+                        <input type="number" id="player1-score" readonly value="0">
+                        <!-- <label id="player1-score">0</label> -->
+                    </div>
+                    <h3>VS</h3>
+                    <div id="score-2">
+                        <p id="player2-name"> Player 2: </p>
+                        <input type="number" id="player2-score" readonly value="0">
+                        <!-- <label id="player2-score">0</label> -->
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="game">
             <div class="head">
                 <h1>Tic Tac Toe</h1>
             </div>
-            <div class="board">
-
-            </div>
+            <div class="board"></div>
+            <button id="rematch" onclick="Game.newGame()">Rematch?</button>
         </div>
         
     </body>

@@ -94,8 +94,8 @@ body {
 
 /******** Announce/About Me *************/
 .card {
-    padding: 15px;
-    min-height: 300px;
+    padding: 10px 20px 10px 20px;
+    height: 301px; /* Account for the gap.*/
 }
 .flexy {
     display: flex;
@@ -107,7 +107,6 @@ body {
 .announcement {
     margin-bottom: 5px;
     align-content: center;
-    height: 30%;
     overflow:scroll;
     overflow-x: hidden;
     border-bottom: 1px solid gray;
@@ -121,24 +120,28 @@ body {
     margin-bottom: 10px;
 }
 .announcement-title {
-    font-size: small;
     font-weight: bold;
 }
 .announcement-text {
-    font-size: x-small;
+    font-size: small;
 }
 .me {
     color: black;
-    font-size: clamp(.75rem, .3vw, 1rem); 
+    font-size: clamp(.9rem, .5vw, 1rem); 
 }
+/* #personal-intro{
+    overflow: scroll;
+} */
 #aboutme-content {
-    padding: 20px;
+    text-align: center;
 }
-#aboutme-content > ul {
-    list-style: none;
+#personal-greet {
+    margin-top: 30px;
+    /* border: 2px solid black; */
 }
-#aboutme-content > ul  > li > a {
+#aboutme-content > p >  a {
     text-decoration:underline;
+    text-decoration-color: var(--dashboard-accent);
 }
 
 /*********** Sidebar *******************************************************************/

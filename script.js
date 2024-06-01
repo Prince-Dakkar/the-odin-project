@@ -1,5 +1,8 @@
-
-// Add more projects here as needed. Eventually switch over to pulling this info out of a database.
+/**
+ * Projects List.
+ * Add more here as needed. Eventually switch over to 
+ * pulling this info out of a database.
+ */
 projectList = [
     {   
         _id: "project-nine",
@@ -8,7 +11,9 @@ projectList = [
         star_ref: "#",
         view_ref: "./projects/odin-tic-tac-toe/tic-tac-toe.html",
         share_ref: "#",
-        body_text: "In progress",
+        body_text: "Simple Tic Tac Toe game. Working with factories for objects in js and object interplay. Allows assigning a name to "
+                    + "two participants, playing a game, and replaying infinitely many times while keeping current score. Not really that pretty:"
+                    + " most of the work is in the backend.",
         course: "Javascript",
         course_ref: "https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript"
     },
@@ -19,7 +24,8 @@ projectList = [
         star_ref: "#",
         view_ref: "./projects/odin-library/library-home.html",
         share_ref: "#",
-        body_text: "Making a library! Exploring Objects in Javascript.",
+        body_text: "Making a library! Exploring Objects in Javascript. Allows user to browse current list, add and remove books, "
+                    + "and indicate whether or not they have read each book.",
         course: "Javascript",
         course_ref: "https://www.theodinproject.com/paths/full-stack-javascript/courses/javascript"
     },
@@ -30,7 +36,7 @@ projectList = [
         star_ref: "#",
         view_ref: "./projects/odin-admin-dashboard/dashboard-home.html",
         share_ref: "#",
-        body_text: "Grid layout, intermediate HTML/CSS. This Demo dash is a modified version of this original project.",
+        body_text: "Grid layout, intermediate HTML/CSS. This dash you're seeing right now is a modified version of this original project.",
         course: "Inter. HTML/CSS",
         course_ref: "https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css"
     },
@@ -77,13 +83,14 @@ projectList = [
         star_ref: "#",
         view_ref: "./projects/odin-etchy-sketchy/etchy-home.html",
         share_ref: "#",
-        body_text: "More practice with Javascript and working with Dom manipulation. ",
+        body_text: "More practice with Javascript and working with Dom manipulation. Etch-a-sketch with functionality "
+                    + "to change colors, resize board and clear board.",
         course: "Foundations",
         course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
     },
     {   
         _id: "project-two",
-        name: "Odin Admin Dashboard",
+        name: "Odin Rock/Paper/Scissors",
         ref: "./projects/odin-rock-paper-scissors/rps-home.html",
         star_ref: "#",
         view_ref: "./projects/odin-rock-paper-scissors/rps-home.html",
@@ -108,13 +115,61 @@ projectList = [
     }
 ]
 
+/**
+ * Announcements list.
+ */
+announcementsList = [
+    {
+        title: "What is this site?",
+        text: "This is my central hub for the projects I do for The Odin Project. I was getting tired of making so many new little"
+                +" repos for the separate projects, so I decided to bundle them all up together! As you can see, I just modified"
+                + " the Admin Dashboard project to get started with my home page."
 
+    },
+    {
+        title: "Remember",
+        text: "Everything that has a beginning has an end."
 
+    },
+    {
+        title: "Last Update:",
+        text: "New Project, added 5/21/24/"
+    }
+]
 
+/**
+ * Initialize the frontend by populating requested info.
+ */
+function init() {
+    addProjects();
+    addAnnouncements();
+}
+
+/**
+ * Add the announcements to their assigned card.
+ */
+function addAnnouncements(){
+    const card = document.querySelector("#announce-content");
+    announcementsList.forEach(announcement => {
+        const ann = document.createElement('div');
+        ann.classList.add("announcement");
+        ann.innerHTML = `
+            <p>
+                <span class="announcement-title">${announcement.title}</span>
+                <br>
+                <span class="announcement-text"> ${announcement.text} 
+                </span>
+            </p>
+        `;
+        card.appendChild(ann);
+    });
+}
+
+/**
+ * Add the projects to their assigned grid.
+ */
 function addProjects() {
     const grid = document.querySelector("#projects-grid");
-    
-
     projectList.forEach(project => {
         const card = document.createElement('div');
         card.id = project._id;
@@ -132,11 +187,8 @@ function addProjects() {
                 <a href=${project.share_ref}><img class="project-action-icon share-icon" src="./images/share-variant.svg" /></a>
             </div>
         `;
-
         grid.appendChild(card);
-        
     });
 }
 
-
-addProjects();
+init();
