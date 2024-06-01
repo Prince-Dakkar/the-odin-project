@@ -20,7 +20,7 @@
                     </div>
                 </div>
 
-                <form id="form" action="javascript:void(0);" onsubmit="formAddBookToLibrary()">
+                <form id="form" action="javascript:void(0);" onsubmit="library.addBookFromForm()">
                     <fieldset id="fieldset">
                         <div class="flexy" id="first-d">
                             <label for="title">Title:</label>
@@ -42,7 +42,7 @@
                         <button type="submit" id="add" name="add" required>Add Book</button>
                     </fieldset>
                 </form>
-                <button id="sort-alpha" onclick="sortAlphabetically()">Sort Alphabetically</button>  
+                <button id="sort-alpha" onclick="library.sortAlphabetically()">Sort Alphabetically</button>  
             </div>
             <div id="scroll">
             </div>
