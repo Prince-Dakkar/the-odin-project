@@ -47,8 +47,8 @@ class Library {
                 <p class="read" >${book.read ? 'Have Read' : 'Not Read Yet'}</p>
                 <p class="info" >${book.info()}</p>
                 <div class="card-buttons"> 
-                    <button onclick="lib.removeBook(${i})">Remove</button> 
-                    <button onclick="lib.changeReadStatus(${i})">Change Read Status</button> 
+                    <button onclick="library.removeBook(${i})">Remove</button> 
+                    <button onclick="library.changeReadStatus(${i})">Change Read Status</button> 
                 </div>
             `;
             scrollpane.appendChild(card);
@@ -80,12 +80,14 @@ library.addBook(new Book("Lord of the Flies", "William Golding", "315", false));
 library.populate();     // First population of the current library    
 
 // Activate show function so it works correctly on first btn click
-(function show() {
+function show() {
     let x = document.querySelector("#form");
     if (x.style.display === "none") {
         x.style.display = "block";
     } else {
         x.style.display = "none";
     }
-})();
+}
+
+show();
 

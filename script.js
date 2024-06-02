@@ -54,18 +54,6 @@ projectList = [
     },
     {   
         _id: "project-five",
-        name: "Odin Landing Page",
-        ref: "./projects/odin-landing-page/landing-home.html",
-        star_ref: "#",
-        view_ref: "./projects/odin-landing-page/landing-home.html",
-        share_ref: "#",
-        body_text: "Taking on a bigger page layout. This project showcases ability to set up a "
-                    + "simple html framework for a project and use simple html/css concepts like FLEX!",
-        course: "Foundations",
-        course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
-    },
-    {   
-        _id: "project-four",
         name: "Odin Calculator",
         ref: "./projects/odin-calculator/calculator-home.html",
         star_ref: "#",
@@ -77,7 +65,7 @@ projectList = [
         course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
     },
     {   
-        _id: "project-three",
+        _id: "project-four",
         name: "Odin Etch-a-Sketch",
         ref: "./projects/odin-etchy-sketchy/etchy-home.html",
         star_ref: "#",
@@ -89,7 +77,7 @@ projectList = [
         course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
     },
     {   
-        _id: "project-two",
+        _id: "project-three",
         name: "Odin Rock/Paper/Scissors",
         ref: "./projects/odin-rock-paper-scissors/rps-home.html",
         star_ref: "#",
@@ -97,6 +85,18 @@ projectList = [
         share_ref: "#",
         body_text: "This is the refactored (UI added) version of the Rock/Paper/Scissors project. Learning basic "
                     +"Javascript and then how to hook it up to a UI.",
+        course: "Foundations",
+        course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
+    },
+    {   
+        _id: "project-two",
+        name: "Odin Landing Page",
+        ref: "./projects/odin-landing-page/landing-home.html",
+        star_ref: "#",
+        view_ref: "./projects/odin-landing-page/landing-home.html",
+        share_ref: "#",
+        body_text: "Taking on a bigger page layout. This project showcases ability to set up a "
+                    + "simple html framework for a project and use simple html/css concepts like FLEX!",
         course: "Foundations",
         course_ref: "https://www.theodinproject.com/paths/foundations/courses/foundations"
     },
