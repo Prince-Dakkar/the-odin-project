@@ -64,8 +64,9 @@ class Book {
         this.read = r;
     }
     info() {
+        console.log(this)
         let hold = this.read ? ' have read.' : ' not read yet.';
-        return  this.t + " by " + this.a + ", " + this.p + " pages," + hold;
+        return  this.title + " by " + this.author + ", " + this.pages + " pages," + hold;
     }
 }
 
